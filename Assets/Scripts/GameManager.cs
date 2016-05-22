@@ -119,6 +119,12 @@ public class GameManager : MonoBehaviour
         enemies.Add(script);
     }
 
+    //Call this to remove the passed in Enemy from the List of Enemy objects.
+    public void RemoveEnemyFromList(Enemy script)
+    {
+        //Remove Enemy from List enemies.
+        enemies.Remove(script);
+    }
 
     //GameOver is called when the player reaches 0 food points
     public void GameOver()

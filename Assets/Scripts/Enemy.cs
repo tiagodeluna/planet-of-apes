@@ -102,6 +102,9 @@ public class Enemy : MovingObject
         life -= 1;
 
         if (life <= 0)
+        {
+            GameManager.instance.RemoveEnemyFromList(this);
             Destroy(gameObject);
+        }
     }
 }
