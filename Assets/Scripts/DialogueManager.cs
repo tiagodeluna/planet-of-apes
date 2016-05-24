@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour {
 
 			//Initializes list of dialogue texts.
 			dialogueMap = new Dictionary<int, string> ();
-			dialogueMap.Add(1, "I do not believe that survived the fall!\nThe controls of my ship just went crazy " +
+			dialogueMap.Add(1, "I can't believe I survived the fall!\nThe controls of my ship just went crazy " +
 				"and I was attracted by the gravitational field of this planet... but what planet is this?");
 			dialogueMap.Add(2, "My God! There are apes here!");
 		}
@@ -46,13 +46,16 @@ public class DialogueManager : MonoBehaviour {
 
 	public void ShowBox(int level)
 	{
-		//Call the SetActive function with a delay in seconds of dialogueStartDelay.
-		Invoke("SetActive", dialogueStartDelay);
-
 		//Selects the text for the current level to be displayed.
 		string text;
 		dialogueMap.TryGetValue (level, out text);
-		dialogueText.text = text;
+
+		if (!string.IsNullOrEmpty (text)) {
+			//Call the SetActive function with a delay in seconds of dialogueStartDelay.
+			Invoke ("SetActive", dialogueStartDelay);
+			dialogueText.text = text;
+		}
+
 	}
 
 	void SetActive()

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4004645253830ea49a321730884ac8c6
-timeCreated: 1463945559
+timeCreated: 1463963036
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,6 +61,7 @@ TextureImporter:
     21300108: thinkingape_SpriteSheet_carlos_v01_54
     21300110: thinkingape_SpriteSheet_carlos_v01_55
     21300112: thinkingape_SpriteSheet_carlos_v01_56
+    21300114: thinkingape_SpriteSheet_carlos_v01_57
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1094,6 +1095,21 @@ TextureImporter:
         - {x: 11, y: 1}
         - {x: 10, y: 4}
         - {x: -4, y: 4}
+    - name: thinkingape_SpriteSheet_carlos_v01_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     outline: []
   spritePackingTag: 
   userData: 

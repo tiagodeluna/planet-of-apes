@@ -254,7 +254,7 @@ public class Player : MovingObject
 			SoundManager.instance.PlaySingle(gameOverSound);
 
 			//Stop the background music.
-			SoundManager.instance.musicSource.Stop();
+			SoundManager.instance.musicSource1.Stop();
 
 			//Call the GameOver function of GameManager.
 			GameManager.instance.GameOver();
